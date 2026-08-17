@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Ha lesz saját domained, told fel a sitemap sort is, pl.:
+# Sitemap: https://sajat-domain.ro/sitemap.xml
