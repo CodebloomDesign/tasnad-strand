@@ -56,6 +56,11 @@
   .cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
   @media (max-width:680px){.cols{grid-template-columns:1fr;gap:32px}}
 
+  .highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:32px;padding-top:26px;border-top:1px solid var(--line)}
+  .highlights .h-t{font-weight:600;margin:0 0 3px}
+  .highlights .h-d{color:var(--muted);font-size:.94rem;margin:0}
+  @media (max-width:680px){.highlights{grid-template-columns:1fr;gap:18px}}
+
   dl.info{margin:0}
   dl.info>div{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-top:1px solid var(--line)}
   dl.info>div:first-child{border-top:0}
@@ -138,7 +143,12 @@
   <section id="info">
     <div class="wrap">
       <p class="lead" data-i="lead">Ásványokban gazdag termálvíz akár 40 °C-on. Öt medence, vízi csúszdák, gyerekmedence és tágas füves terület. A nyári szezon május elejétől szeptemberig tart.</p>
-      <div class="cols" style="margin-top:34px">
+      <div class="highlights">
+        <div><p class="h-t" data-i="why1_t">Akár 40 °C-os termálvíz</p><p class="h-d" data-i="why1_d">Ásványokban gazdag, jótékony gyógyvíz a mélyből.</p></div>
+        <div><p class="h-t" data-i="why2_t">Egész családnak</p><p class="h-d" data-i="why2_d">Öt medence, vízi csúszdák és külön gyerekmedence.</p></div>
+        <div><p class="h-t" data-i="why3_t">A megye legnagyobb strandja</p><p class="h-d" data-i="why3_d">Tágas zöld terület, hosszú nyári nyitvatartás.</p></div>
+      </div>
+      <div class="cols" style="margin-top:40px">
         <div>
           <h2 data-i="hours_t">Nyitvatartás</h2>
           <dl class="info">
@@ -235,6 +245,9 @@
 const I={
  hu:{nav_info:"Információ",nav_price:"Árak",nav_gallery:"Galéria",nav_contact:"Kapcsolat",
   lead:"Ásványokban gazdag termálvíz akár 40 °C-on. Öt medence, vízi csúszdák, gyerekmedence és tágas füves terület. A nyári szezon május elejétől szeptemberig tart.",
+  why1_t:"Akár 40 °C-os termálvíz",why1_d:"Ásványokban gazdag, jótékony gyógyvíz a mélyből.",
+  why2_t:"Egész családnak",why2_d:"Öt medence, vízi csúszdák és külön gyerekmedence.",
+  why3_t:"A megye legnagyobb strandja",why3_d:"Tágas zöld terület, hosszú nyári nyitvatartás.",
   hours_t:"Nyitvatartás",hours_days:"Hétfő – Vasárnap",season:"Szezon",season_v:"Május – Szeptember",
   find_t:"Helyszín",county:"Szatmár megye, Románia",map:"Térkép megnyitása",
   price_t:"Árak",p_adult:"Felnőtt",p_child:"Gyerek, diák",p_free:"6 év alatt",p_free_v:"ingyenes",
@@ -247,6 +260,9 @@ const I={
   cookie_more:"Részletek",cookie_accept:"Rendben",close_aria:"Bezárás"},
  ro:{nav_info:"Informații",nav_price:"Tarife",nav_gallery:"Galerie",nav_contact:"Contact",
   lead:"Apă termală bogată în minerale, până la 40 °C. Cinci bazine, tobogane, bazin pentru copii și spațiu verde generos. Sezonul de vară ține din mai până în septembrie.",
+  why1_t:"Apă termală până la 40 °C",why1_d:"Apă minerală, benefică, din adâncuri.",
+  why2_t:"Pentru toată familia",why2_d:"Cinci bazine, tobogane și bazin pentru copii.",
+  why3_t:"Cel mai mare ștrand din județ",why3_d:"Spațiu verde generos, program lung vara.",
   hours_t:"Program",hours_days:"Luni – Duminică",season:"Sezon",season_v:"Mai – Septembrie",
   find_t:"Locație",county:"județul Satu Mare, România",map:"Deschide harta",
   price_t:"Tarife",p_adult:"Adult",p_child:"Copil, elev",p_free:"Sub 6 ani",p_free_v:"gratuit",
@@ -259,6 +275,9 @@ const I={
   cookie_more:"Detalii",cookie_accept:"Am înțeles",close_aria:"Închide"},
  en:{nav_info:"Info",nav_price:"Prices",nav_gallery:"Gallery",nav_contact:"Contact",
   lead:"Mineral-rich thermal water up to 40 °C. Five pools, water slides, a children's pool and plenty of green space. The summer season runs from early May to September.",
+  why1_t:"Thermal water up to 40 °C",why1_d:"Mineral-rich, soothing water from deep underground.",
+  why2_t:"For the whole family",why2_d:"Five pools, water slides and a children's pool.",
+  why3_t:"The county's largest beach",why3_d:"Spacious green area, long summer hours.",
   hours_t:"Opening hours",hours_days:"Monday – Sunday",season:"Season",season_v:"May – September",
   find_t:"Location",county:"Satu Mare County, Romania",map:"Open map",
   price_t:"Prices",p_adult:"Adult",p_child:"Child, student",p_free:"Under 6",p_free_v:"free",
