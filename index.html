@@ -73,6 +73,12 @@
   table td:last-child{text-align:right;white-space:nowrap;font-weight:600}
   .note{font-size:.92rem;color:var(--muted);margin-top:14px}
 
+  ul.events{list-style:none;margin:0;padding:0}
+  ul.events li{padding:10px 0;border-top:1px solid var(--line)}
+  ul.events li:first-child{border-top:0}
+  ul.events b{font-weight:600}
+  ul.events .d{color:var(--muted)}
+
   .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
   .gallery button{padding:0;border:0;background:none;cursor:zoom-in;aspect-ratio:1;overflow:hidden;border-radius:3px}
   .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
@@ -179,6 +185,18 @@
     </div>
   </section>
 
+  <section id="esemenyek">
+    <div class="wrap">
+      <h2 data-i="ev_t">Események</h2>
+      <p class="muted" data-i="ev_intro" style="margin-bottom:14px">A szezonban visszatérő programok:</p>
+      <ul class="events">
+        <li><b data-i="ev1_t">Habparty</b> — <span class="d" data-i="ev1_d">zene és hab a medencében a legmelegebb nyári napokon.</span></li>
+        <li><b data-i="ev2_t">Pálinka Fesztivál</b> — <span class="d" data-i="ev2_d">a helyi pálinka hagyományos, visszatérő ünnepe a strand közelében.</span></li>
+      </ul>
+      <p class="note" data-i="ev_note">Az aktuális időpontokért kövesd a hivatalos Facebook-oldalt.</p>
+    </div>
+  </section>
+
   <section id="galeria">
     <div class="wrap">
       <h2 data-i="gallery_t">Galéria</h2>
@@ -253,6 +271,10 @@ const I={
   price_t:"Árak",p_adult:"Felnőtt",p_child:"Gyerek, diák",p_free:"6 év alatt",p_free_v:"ingyenes",
   p_adult16:"Felnőtt, 16:00 után (H–P)",p_child16:"Gyerek, diák, 16:00 után (H–P)",
   price_note:"A belépőhöz 20 lei karkötő-letét adódik, amit távozáskor visszakapsz. Az árak tájékoztató jellegűek; a pontos, aktuális díjakért a strand hivatalos Facebook-oldala az irányadó.",
+  ev_t:"Események",ev_intro:"A szezonban visszatérő programok:",
+  ev1_t:"Habparty",ev1_d:"zene és hab a medencében a legmelegebb nyári napokon.",
+  ev2_t:"Pálinka Fesztivál",ev2_d:"a helyi pálinka hagyományos, visszatérő ünnepe a strand közelében.",
+  ev_note:"Az aktuális időpontokért kövesd a hivatalos Facebook-oldalt.",
   gallery_t:"Galéria",contact_t:"Kapcsolat",c_phone:"Telefon",c_addr:"Cím",
   foot_note:"nem hivatalos, tájékoztató oldal",
   leg_imp:"Impresszum",leg_priv:"Adatvédelem",leg_cookie:"Cookie",leg_disc:"Jogi nyilatkozat",
@@ -268,6 +290,10 @@ const I={
   price_t:"Tarife",p_adult:"Adult",p_child:"Copil, elev",p_free:"Sub 6 ani",p_free_v:"gratuit",
   p_adult16:"Adult, după ora 16:00 (L–V)",p_child16:"Copil, elev, după ora 16:00 (L–V)",
   price_note:"La bilet se adaugă o garanție de 20 lei pentru brățară, returnată la ieșire. Tarifele sunt orientative; pentru prețurile exacte și actuale, pagina oficială de Facebook este de referință.",
+  ev_t:"Evenimente",ev_intro:"Programe recurente în sezon:",
+  ev1_t:"Petrecere cu spumă",ev1_d:"muzică și spumă în bazin în cele mai calde zile de vară.",
+  ev2_t:"Festivalul Pălincii",ev2_d:"sărbătoarea tradițională a pălincii locale, în apropierea ștrandului.",
+  ev_note:"Pentru datele actuale, urmărește pagina oficială de Facebook.",
   gallery_t:"Galerie",contact_t:"Contact",c_phone:"Telefon",c_addr:"Adresă",
   foot_note:"pagină neoficială, informativă",
   leg_imp:"Date de contact",leg_priv:"Confidențialitate",leg_cookie:"Cookie",leg_disc:"Notă juridică",
@@ -283,6 +309,10 @@ const I={
   price_t:"Prices",p_adult:"Adult",p_child:"Child, student",p_free:"Under 6",p_free_v:"free",
   p_adult16:"Adult, after 4 pm (Mon–Fri)",p_child16:"Child, student, after 4 pm (Mon–Fri)",
   price_note:"A 20 lei wristband deposit is added to the ticket and refunded on the way out. Prices are indicative; for exact, current rates the official Facebook page prevails.",
+  ev_t:"Events",ev_intro:"Recurring events during the season:",
+  ev1_t:"Foam party",ev1_d:"music and foam in the pool on the hottest summer days.",
+  ev2_t:"Pálinka Festival",ev2_d:"the traditional local pálinka celebration, near the beach.",
+  ev_note:"For current dates, follow the official Facebook page.",
   gallery_t:"Gallery",contact_t:"Contact",c_phone:"Phone",c_addr:"Address",
   foot_note:"unofficial, informational page",
   leg_imp:"Legal notice",leg_priv:"Privacy",leg_cookie:"Cookie",leg_disc:"Disclaimer",
