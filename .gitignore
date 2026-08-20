@@ -1,0 +1,7 @@
+# wrangler / build cache
+.wrangler/
+node_modules/
+
+# OS
+Thumbs.db
+.DS_Store
